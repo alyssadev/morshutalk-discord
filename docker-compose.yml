@@ -1,0 +1,8 @@
+services:
+  bot:
+    build:
+      context: .
+    env_file: .env
+    volumes:
+      - .:/usr/src/app
+    restart: always
